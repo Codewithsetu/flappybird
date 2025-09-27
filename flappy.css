@@ -1,0 +1,62 @@
+body {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: linear-gradient(to bottom, #70c5ce, #f7feff);
+  font-family: sans-serif;
+}
+
+#game-container {
+  position: relative;
+  width: 400px;
+  height: 600px;
+  background: skyblue;
+  border: 2px solid #000;
+  overflow: hidden;
+}
+
+#bird {
+  position: absolute;
+  width: 40px;
+  height: 30px;
+  background: yellow;
+  top: 50%;
+  left: 50px;
+  border-radius: 50%;
+}
+
+.pipe {
+  position: absolute;
+  width: 60px;
+  background: green;
+}
+
+#score {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+#message {
+  position: absolute;
+  width: 100%;
+  top: 40%;
+  text-align: center;
+  font-size: 32px;
+  color: red;
+  display: none;
+}
+
+#restart-btn {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: none;
+  padding: 10px 20px;
+  font-size: 20px;
+}
